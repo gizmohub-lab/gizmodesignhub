@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GizmodesigHub</title>
+  <link rel="icon" href="GIZMO DP.png" type="image/x-icon">
+  <link rel="icon" type="image/png" sizes="20x20" href="/images/NOOR-SHOW-LOGO-PNG.png">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <link rel="stylesheet" href="styles.css">
+  <style>
+        /* Container for the carousel */
+        .caraus .container  {
+      width: 80%; /* Adjust container width to your liking */
+      margin: 0 auto; /* Center container */
+      padding: 30px 0; /* Padding for top and bottom */
+    }
+
+    /* Styling for the images */
+    .brand-carousel img {
+      width: 100px;  /* Set width to 100px */
+      height: auto;  /* Keep height proportional */
+      display: block;
+      margin: auto;
+    }
+
+    /* Ensuring consistent padding (20px gap between slides) */
+    .slick-slide {
+      padding: 0 20px; /* Half of 20px on each side for a total of 20px gap */
+    }
+  </style>
+  
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+    *{
+      padding: 0;
+      margin: 0;
+      font-family: 'Red Hat Display', serif;
+      box-sizing: border-box;
+    }
+
+    header{
+      width: 100%;
+      height: 14vh;
+      overflow: hidden;
+      
+    }
+    header {
+   
+    transition: background-color 0.3s ease;
+}
+
+
+    nav{
+      width: 100%;
+      height: 14vh;
+      position: sticky;
+      background:transparent;
+      z-index: 1000;
+    }
+
+    .nav-container{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .logo{
+      color: black;
+      font-size: 1rem;
+      font-weight: bold;
+      margin-left: 10px;
+    }
+
+    .logo span{
+      color: #30a8e5;
+      text-shadow: 0 0 10px #30a8e5;
+    }
+
+    .bell-icon {
+      font-size: 1.5rem;
+      color: red;
+      display: inline-block;
+      position: relative;
+    }
+
+    .bell-icon i {
+      font-size: 1.8rem;
+      color: red;
+    }
+
+    .hamburg,
+    .cancel{
+      cursor: pointer;
+      position: absolute;
+      right: 15px;
+      top: 10px;
+      color: black;
+      display: none;
+      font-size: 1rem;
+    }
+
+    .nav-container .links{
+      display: flex;
+    }
+
+    .nav-container .links a{
+      position: relative;
+      font-size: 15px;
+      color: black;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: 400;
+      transition: 0.3s linear;
+    }
+
+    .nav-container .links a::before{
+      position: absolute;
+      content: "";
+      bottom: -3px;
+      left: 0;
+      width: 0%;
+      height: 3px;
+      background-color: black;
+      transition: 0.2s linear;
+    }
+
+    .nav-container .links a:hover::before{
+      width: 100%;
+    }
+
+    .nav-container .links a:hover{
+      color: black;
+    }
+
+    .dropdown{
+      z-index: 100;
+      position: fixed;
+      top: 0;
+      left: 0;
+      transform: translateY(-500px);
+      width: 100%;
+      height: auto;
+      backdrop-filter: blur(4px) brightness(40%);
+      box-shadow: 0 0 20px black;
+      transition: 0.2s linear;
+      background: white;
+    }
+
+    .dropdown .links a{
+      display: flex;
+      color: black;
+      text-decoration: none;
+      justify-content: center;
+      padding: 15px 0;
+      align-items: center;
+      transition: 0.2s linear;
+    }
+
+    .dropdown .links a:hover{
+      background-color: black;
+      color: white;
+    }
+
+    /* Media Queries for smaller devices */
+    @media (max-width: 884px) {
+      nav .logo{
+        position: absolute;
+        top: 16px;
+        left: 15px;
+        font-size: 1.5rem;
+      }
+
+      .nav-container .links{
+        display: none;
+      }
+
+      .hamburg,
+      .cancel{
+        display: block;
+        margin-top: 26px;
+      }
+    }
+    .navbutton{
+       width: 230px;
+       height: 40px;
+       border-radius: 7px;
+       background: black;
+       border-color: none;
+       color: white;
+       transition: 0.3sec ease-in;
+       font-family: 'Montserrat', sans-serif;
+      
+    }
+    .navbutton:hover{
+      border-radius: 20px;
+    }
+    .navbtn{
+        margin-left: 20px;
+    }
+    .headline {
+    font-size: 6.5vw;
+    line-height: 1.2em;
+    font-family: 'Red Hat Display',sans-serif;
+    background: -webkit-linear-gradient(left,#dd3b8c ,#f9bf52 ,#1cb4a7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 300;
+}
+  </style>
+  <style>
+    .frstsection {
+    padding-top: 15vh; /* Adds space to push the h1 down */
+    padding-top: 27vh; /* Pushes the headline further down */
+    text-align: center; /* Centers the headline text */
+  background: url(BG-GRADIENT.png);
+  height: 700px;
+}
+.headline {
+    font-size: 6vw;
+    line-height: 1.2em;
+    font-family: 'Red Hat Display', sans-serif;
+    background: -webkit-linear-gradient(left, #dd3b8c, #f9bf52, #1cb4a7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 300;
+    margin-top: 20px;
+}
+.buttonmain{
+  background: transparent;
+  color: black;
+}
+.buttonmain:hover{
+  background: #f59cc979;
+  color: black;
+}
+.brnd{
+  width: 100px;
+  height: auto;
+ 
+}
+.headlinetwo{
+  font-size: 40px;
+    line-height: 1.2em;
+    font-family: 'Red Hat Display', sans-serif;
+    background: -webkit-linear-gradient(left, #dd3b8c, #f9bf52, #1cb4a7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 300;
+    margin-top: 20px;
+}
+.ico{
+  font-size: 50px;
+}
+
+
+  </style>
+
+<style>
+  .countersec {
+  background-color: white;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  margin-top: -13px;
+
+}
+
+.counter-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color:white ;
+  padding: 50px 0;
+}
+
+.counter-box {
+  color: #1E2A4F;
+  text-align: center;
+}
+
+.counter-box h2 {
+  font-size: 3em;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color:#1E2A4F;
+}
+
+.counter-box p {
+  font-size: 1em;
+  color: #1E2A4F;
+}
+.fab{
+  font-size: 22px;
+  color: white;
+  transition: 2sec ease;
+  cursor: pointer;
+}
+.fab:hover{
+  transform: translateY(-10px);
+}
+
+  </style>
+
+<style>
+  .colorful-hr {
+height: 5px;
+width: 100%;
+background: linear-gradient(to right, #dd3b8c, #f9bf52, #1cb4a7);
+border: none;
+margin: 20px 0;
+padding: 0;
+
+}
+
+</style>
+
+<style>
+  .lastbutton {
+font-family: Arial, sans-serif;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 30vh;
+background-color: white;
+}
+
+.next-page-arrow {
+text-decoration: none;
+font-size: 24px;
+color: black;
+border: 2px solid black;
+padding: 10px 20px;
+border-radius: 20px;
+transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.next-page-arrow:hover {
+background-color: black;
+color: #fff;
+}
+
+</style>
+
+
+</head>
+<body>
+   
+    <header class="header"  style="position: fixed; z-index: 4; " >
+        <nav>
+          <div class="nav-container">
+            <div class="logo-image" data-aos="zoom-in" data-aos-duration="1500">
+              <img src="GIZMO TYPO.png" alt="logo" style="width:auto; height: 130px; margin-top: 10px;">
+            </div>
+            <div class="links" style="margin-top: 0px;">
+              <div class="link" data-aos="flip-up" data-aos-duration="1500" data-aos-delay="100"><a href="index.html">Home</a></div>
+              <div class="link" data-aos="flip-up" data-aos-duration="1500" data-aos-delay="200"><a href="portfolio.html">Portfolio</a></div>
+              <div class="link" data-aos="flip-up" data-aos-duration="1500" data-aos-delay="300"><a href="about.html">About</a></div>
+              <div class="link" data-aos="flip-up" data-aos-duration="1500" data-aos-delay="400"><a href="contact.html">Contacts</a></div>
+            
+           
+                 
+                </div>
+                <div class="links">
+                  <button class="navbutton" data-aos="flip-up" data-aos-duration="1500" data-aos-delay="500">
+                    <a href="
+                    https://wa.me/c/919845879017" style="text-decoration: none; color: white;">Hi Gizmo!</a>
+                  </button>
+                </div>
+
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+          </div>
+          <div class="dropdown">
+            <div class="links">
+              <a href="index.html">Home</a>
+              <a href="portfolio.html">Portfolio</a>
+              <a href="about.html">About</a>
+              <a href="contact.html">Contacts</a>
+             
+              <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+          </div>
+        </nav>
+      </header>
+    
+      <section class="frstsection">
+        <div class="container">
+        <h1 data-aos="fade-down" data-aos-duration="1500" data-aos-delay="100" class="headline">Elevate your brand</h1>
+           <h1  data-aos="fade-down" data-aos-duration="1500" data-aos-delay="100" class="headline" style="margin-top: -16px;">Crafting captivating stories</h1>
+        
+        <div class="text-center" style="margin-top: 50px;">
+          <p  data-aos="fade-right" data-aos-duration="1500" data-aos-delay="100" style="font-size: 17px;font-family: 'Red Hat Display',sans-serif;">
+            Partner with Gizmodesign.hub for a creative journey of transformation. Together , we'll unlock your brand's potential, <br>driving it toward unmatched success.</p>
+        </div>
+        <div class="text-center mt-4">
+          <a href="about.html" style="text-decoration: none;">
+            <button data-aos="fade-left" data-aos-duration="1500" data-aos-delay="100" class="buttonmain" style="width: 160px;border-radius: 15px; font-family: 'Montserrat', sans-serif;font-size: 15px;">
+              Know more
+            </button>
+          </a>
+        </div>
+        
+        </div>
+    </section>
+    
+    <section class="caraus">
+
+
+      <div class="container">
+        <div class="brand-carousel">
+          <div><img class="brnd" src="2.png" alt="Brand 1"></div>
+          <div><img class="brnd " style="margin-top: 20px;" src="3.png" alt="Brand 2"></div>
+          <div><img class="brnd " style="margin-top: 20px;" src="5.png" alt="Brand 3"></div>
+          <div><img class="brnd mt-2" src="6.png" alt="Brand 4"></div>
+          <div><img class="brnd "  style="margin-top: 20px;" src="7.png" alt="Brand 5"></div>
+          <div><img class="brnd "  style="margin-top: 20px;" src="11.png" alt="Brand 6"></div>
+          
+          
+          <div><img class="brnd "  style="margin-top: 20px;" src="14.png" alt="Brand 9"></div>
+          <div><img class="brnd "  style="margin-top: 20px;" src="15.png" alt="Brand 10"></div>
+          <div><img class="brnd "  style="margin-top: 20px;" src="17.png" alt="Brand 11"></div>
+          <div><img class="brnd mt-1" src="12.png" alt="Brand 7"></div>
+          <div><img class="brnd mt-1" src="18.png" alt="Brand 12"></div>
+          <div><img class="brnd mt-1" src="19.png" alt="Brand 13"></div>
+          <div><img class="brnd mt-1" src="20.png" alt="Brand 14"></div>
+        </div>
+      </div>
+    
+      <!-- jQuery and Slick Carousel JS -->
+      <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    
+      <script>
+        $(document).ready(function(){
+          $('.brand-carousel').slick({
+            slidesToShow: 1,  // Show one image at a time
+            slidesToScroll: 1, // Scroll one image at a time
+            autoplay: true,
+            autoplaySpeed: 2000,  // Set 2 seconds per scroll
+            arrows: false,  // Hide arrows
+            dots: false,    // Hide navigation dots
+            infinite: true, // Loop through slides infinitely
+            centerMode: true, // Center the current slide
+            variableWidth: true, // Allow different widths for images
+            responsive: [
+              {
+                breakpoint: 1024,
+                settings: {
+                  slidesToShow: 1
+                }
+              },
+              {
+                breakpoint: 600,
+                settings: {
+                  slidesToShow: 1
+                }
+              }
+            ]
+          });
+        });
+      </script>
+    </section>
+    
+    <section style="margin-top: 60px;">
+      <div class="container">
+        <div class="col-md-12 text-center">
+          <h1  data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="100" class="headlinetwo">
+            Crafting Future-Ready Brands</h1>
+            <p  data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="100" style="font-size: 17px; margin-top: 30px;margin-left: 10PX;">
+              Welcome to Gizmodesign.hub, where creativity fuels branding innovation. Our passionate team crafts compelling stories that resonate with your audience. We believe in designing experiences that leave a lasting impact. Let us elevate your brand to new heights!</p>
+        </div>
+        <div class="row" style="margin-top: 100px;" >
+          <div class="col-md-3 mt-5" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
+            <div class="text-center">
+          
+            
+             
+              <img src="branding.svg" alt="" style="width: 80px; height: auto;">
+              <p style="margin-top: 20px; font-size: 17px;color: rgba(0, 0, 0, 0.497);">Branding & Identity design</p>
+              <p></p>
+            </div>
+          </div>
+          <div class="col-md-3 mt-5" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
+            <div class="text-center">
+          
+            
+             
+              <img src="commercial-events.svg" alt="" style="width: 80px; height: auto;">
+              <p style="margin-top: 20px; font-size: 17px;color: rgba(0, 0, 0, 0.497);">Events & Creative Campaign</p>
+              <p></p>
+            </div>
+          </div>
+          <div class="col-md-3 mt-5" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
+            <div class="text-center">
+          
+            
+             
+              <img src="craetive-consulting.svg" alt="" style="width: 80px; height: auto;">
+              <p style="margin-top: 20px; font-size: 17px;color: rgba(0, 0, 0, 0.497);">Strategic Planning</p>
+              <p></p>
+            </div>
+          </div>
+          <div class="col-md-3 mt-5" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
+            <div class="text-center">
+          
+            
+             
+              <img src="web-dev.svg" alt="" style="width: 80px; height: auto;">
+              <p style="margin-top: 20px; font-size: 17px;color: rgba(0, 0, 0, 0.497);">Web Designing & Development</p>
+              <p></p>
+            </div>
+          </div>
+                
+        </div>
+
+
+        <div class="row mt-5" >
+          <div class="col-md-3 mt-5" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
+            <div class="text-center">
+          
+            
+             
+              <img src="package-design.svg" alt="" style="width: 80px; height: auto;">
+              <p style="margin-top: 20px; font-size: 17px;color: rgba(0, 0, 0, 0.497);">Graphic Designing</p>
+              <p></p>
+            </div>
+          </div>
+          <div class="col-md-3 mt-5" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
+            <div class="text-center">
+          
+            
+             
+              <img src="product-photography.svg" alt="" style="width: 80px; height: auto;">
+              <p style="margin-top: 20px; font-size: 17px;color: rgba(0, 0, 0, 0.497);">Product Photography</p>
+              <p></p>
+            </div>
+          </div>
+          <div class="col-md-3 mt-5" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
+            <div class="text-center">
+          
+            
+             
+              <img src="video-production.svg" alt="" style="width: 80px; height: auto;">
+              <p style="margin-top: 20px; font-size: 17px;color: rgba(0, 0, 0, 0.497);">Media & production</p>
+              <p></p>
+            </div>
+          </div>
+          <div class="col-md-3 mt-5" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
+            <div class="text-center">
+          
+            
+             
+              <img src="smm.svg" alt="" style="width: 80px; height: auto;">
+              <p style="margin-top: 20px; font-size: 17px;color: rgba(0, 0, 0, 0.497);">Advertising</p>
+              <p></p>
+            </div>
+          </div>
+                
+          </div>
+      </div>
+    </section>
+    <div class="colorful-hr" style="margin-top: 40px;"></div>
+    <section class="counter-section countersec">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 mt-3">
+            <div class="counter-box">
+              <h2><span class="counter" data-count="20000">0</span>+</h2>
+              <p>Creatives</p>
+          </div>
+          </div>
+    
+          <div class="col-md-3 mt-3">
+            <div class="counter-box">
+              <h2><span class="counter" data-count="5000">0</span>+</h2>
+              <p>Happy Clients</p>
+          </div>
+          </div>
+          <div class="col-md-3 mt-3">
+            <div class="counter-box">
+              <h2><span class="counter" data-count="11" data-format="two-digits">00</span>+</h2>
+              <p> Countries</p>
+          </div>
+      </div>
+    
+      <div class="col-md-3 mt-3">
+        <div class="counter-box">
+          <h2><span class="counter" data-count="02" data-format="two-digits">00</span>+</h2>
+          <p>Team Members</p>
+      </div>
+    </div>
+    
+        </div>
+      </div>
+     </section>
+     <div class="colorful-hr" style="margin-top: 0px;"></div>
+
+    <section style="background-color:rgb(120 118 118 / 4%)">
+      <div class="container my-5" style="margin-top: 70px;">
+        <div class="row mt-5">
+            <!-- Carousel Section -->
+            <div class="col-md-6">
+                <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                    <div class="carousel-inner" style="margin-top: 80px;">
+                        <!-- First Image -->
+                        <div class="carousel-item active">
+                            <img src="five.jpg" class="d-block w-100" alt="Slide 1" style="object-fit: cover; height: auto;width: 100%;">
+                        </div>
+                        <!-- Second Image -->
+                        <div class="carousel-item">
+                            <img src="three.jpg" class="d-block w-100" alt="Slide 2" style="object-fit: cover; height: 400px;">
+                        </div>
+                        <!-- Third Image -->
+                        <div class="carousel-item">
+                            <img src="four.jpg" class="d-block w-100" alt="Slide 3" style="object-fit: cover; height: 400px;">
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+      
+            <!-- Text Section -->
+            <div class="col-md-6 text-section">
+                <div class="align-items-center" style="margin-top: 150px;">
+                    <h2 class="headlinetwo" data-aos="fade-down"  data-aos-duration="1500" data-aos-delay="100" >Shaping Timeless Brand Legacies</h2>
+                    <p class="mt-3" style="font-size: 15px;">Enter the world of brand creation, where innovation blends seamlessly with strategy. We design unforgettable brand identities that resonate, inspire, and stand the test of time. From color schemes that stir emotions to logos that reflect your core values, we artfully craft visual stories that leave a lasting mark.</p>
+                </div>
+            </div>
+        </div>
+      </div>
+ 
+      <div class="container">
+        <div class="row">
+          <!-- Text Section -->
+          <div class="col-md-6 text-section">
+            <div class="align-items-center" style="margin-top: 190px;">
+                <h2 class="headlinetwo" data-aos="fade-down"  data-aos-duration="1500" data-aos-delay="100" >Molding Iconic Brand Experiences</h2>
+                <p class="mt-3" style="font-size: 15px;">Step into the world of dynamic brand identity, where creativity meets precision. At Gizmo Design Hub, we craft powerful brand experiences that resonate, inspire, and stand the test of time. From vibrant color palettes that spark emotion to logos that embody your unique story, we expertly weave together visual elements that leave a lasting impression.</p>
+            </div>
+        </div>
+            <!-- Carousel Section -->
+            <div class="col-md-6">
+                <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                    <div class="carousel-inner" style="margin-top: 80px;">
+                        <!-- First Image -->
+                        <div class="carousel-item active">
+                            <img src="INS 7.jpg" class="d-block w-100" alt="Slide 1" style="object-fit: cover; height: 400px;;">
+                        </div>
+                        <!-- Second Image -->
+                        <div class="carousel-item">
+                            <img src="INS 4.jpg" class="d-block w-100" alt="Slide 2" style="object-fit: cover; height: 400px;">
+                        </div>
+                        <!-- Third Image -->
+                        <div class="carousel-item">
+                            <img src="INS 3.jpg" class="d-block w-100" alt="Slide 3" style="object-fit: cover; height: 400px;">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="INS 5.jpg" class="d-block w-100" alt="Slide 3" style="object-fit: cover; height: 400px;">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="INS 6.jpg" class="d-block w-100" alt="Slide 3" style="object-fit: cover; height: 400px;">
+                    </div>
+                    </div>
+                   
+                </div>
+            </div>
+      
+            
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="lastbutton" style="margin-top: 20px;" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
+      <a style="text-decoration: none;" href="portfolio.html" class="next-page-arrow">Next Page &rarr;</a>
+  </section>
+   
+   
+    
+
+
+    <footer style="background-color: #1E2A4F;margin-top: 50px;">
+      <div class="container-fluid">
+        <div class="row">
+        <div class="col-md-6">
+          <div class="content">
+            <img src="GIZMO TYPO WHITE.png" alt="" style="height: 300px; width: auto;margin-top: -120px;">
+            <p style="color: white; margin-top: -50px;font-size: 13px;margin-left: 59px;">Gizmodesign.hub is a creative hub for talented designers, illustrators, and web developers. It helps professionals explore their creativity and deliver designs that bring value to businesses and the design world.</p>
+           
+          </div>
+        </div>
+        <div class="col-md-6">
+          
+          <div class="anothercontent text-center " style="margin-top: 90px;">
+           <a href="
+           https://www.instagram.com/gizmodesign.hub
+           "> <i class="fab fa-instagram ml-2"></i></a>
+           <a href="https://www.linkedin.com/in/ashiq-gizmo-45ba20323/"><i class="fab fa-linkedin ml-2"></i></a>
+            <a href="
+            https://wa.me/c/919845879017"><i class="fab fa-whatsapp ml-2"></i></a>
+              <a href="
+              https://www.facebook.com/gizmodesign.hub?mibextid=ZbWKwL"><i class="fab fa-facebook ml-2"></i></a>
+                <a href="https://t.me/ashidesign"><i class="fab fa-telegram ml-2"></i></a>
+                  <a href="https://www.behance.net/gizmohub"><i class="fab fa-behance ml-2"></i></a>
+                    <p style="color: white; font-size: 15px; margin-top: 10px;">A <span style="color: white;font-weight: bold;">GIZMO</span> BRAND</p>
+                      <p style="margin-top: -13px;color: rgba(255, 255, 255, 0.661); font-size: 13px;">© 2024 Gizmo Design Hub. All Rights Reserved.
+                       
+            </p>
+          
+          </div>
+        </div>
+      
+      </div>
+      </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.brand-carousel').slick({
+          slidesToShow: 6,  // Show 6 logos at once
+          slidesToScroll: 1, // Scroll one logo at a time
+          autoplay: true,
+          autoplaySpeed: 2000,  // Set 2 seconds per scroll
+          arrows: false,  // Hide arrows
+          dots: false,    // Hide navigation dots
+          responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 4
+              }
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 2
+              }
+            }
+          ]
+        });
+      });
+    </script>
+  <script>
+    window.onscroll = function () {
+    var header = document.querySelector("header");
+    var nav = document.querySelector("nav"); // Select the nav element
+
+    if (window.scrollY > 50) {
+        header.style.backgroundColor = "white";
+        nav.style.backgroundColor = "white"; // Change nav background
+        header.style.animation = "blink 0.5s"; // Optional blink effect
+    } else {
+        header.style.backgroundColor = "transparent";
+        nav.style.backgroundColor = "transparent"; // Reset nav background
+    }
+};
+
+  </script>
+
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+      const counters = document.querySelectorAll('.counter');
+      counters.forEach(counter => {
+          counter.innerText = '0';
+          const updateCounter = () => {
+              const target = +counter.getAttribute('data-count');
+              const current = +counter.innerText;
+              const increment = target / 100;
+
+              if (current < target) {
+                  counter.innerText = `${Math.ceil(current + increment)}`;
+                  setTimeout(updateCounter, 100);
+              } else {
+                  let formattedTarget = target;
+                  // Check if the counter requires two-digit formatting
+                  if (counter.getAttribute('data-format') === 'two-digits') {
+                      formattedTarget = target.toString().padStart(2, '0'); // Add leading zero if necessary
+                  }
+                  counter.innerText = formattedTarget;
+              }
+          };
+
+          updateCounter();
+      });
+  });
+</script>
+      <script>
+        const prev = document.querySelector("#prev");
+      const next = document.querySelector("#next");
+      
+      let carouselVp = document.querySelector("#carousel-vp");
+      
+      let cCarouselInner = document.querySelector("#cCarousel-inner");
+      let carouselInnerWidth = cCarouselInner.getBoundingClientRect().width;
+      
+      let leftValue = 0;
+      
+      // Variable used to set the carousel movement value (card's width + gap)
+      const totalMovementSize =
+      parseFloat(
+        document.querySelector(".cCarousel-item").getBoundingClientRect().width,
+        10
+      ) +
+      parseFloat(
+        window.getComputedStyle(cCarouselInner).getPropertyValue("gap"),
+        10
+      );
+      
+      prev.addEventListener("click", () => {
+      if (!leftValue == 0) {
+        leftValue -= -totalMovementSize;
+        cCarouselInner.style.left = leftValue + "px";
+      }
+      });
+      
+      next.addEventListener("click", () => {
+      const carouselVpWidth = carouselVp.getBoundingClientRect().width;
+      if (carouselInnerWidth - Math.abs(leftValue) > carouselVpWidth) {
+        leftValue -= totalMovementSize;
+        cCarouselInner.style.left = leftValue + "px";
+      }
+      });
+      
+      const mediaQuery510 = window.matchMedia("(max-width: 510px)");
+      const mediaQuery770 = window.matchMedia("(max-width: 770px)");
+      
+      mediaQuery510.addEventListener("change", mediaManagement);
+      mediaQuery770.addEventListener("change", mediaManagement);
+      
+      let oldViewportWidth = window.innerWidth;
+      
+      function mediaManagement() {
+      const newViewportWidth = window.innerWidth;
+      
+      if (leftValue <= -totalMovementSize && oldViewportWidth < newViewportWidth) {
+        leftValue += totalMovementSize;
+        cCarouselInner.style.left = leftValue + "px";
+        oldViewportWidth = newViewportWidth;
+      } else if (
+        leftValue <= -totalMovementSize &&
+        oldViewportWidth > newViewportWidth
+      ) {
+        leftValue -= totalMovementSize;
+        cCarouselInner.style.left = leftValue + "px";
+        oldViewportWidth = newViewportWidth;
+      }
+      }
+      
+      </script>
+    
+    
+    
+    
+    
+      <script>
+        function toggleContent() {
+          var content = document.getElementById("clickContent");
+          if (content.style.display === "none" || content.style.display === "") {
+            content.style.display = "block";
+          } else {
+            content.style.display = "none";
+          }
+        }
+      </script>
+      
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          // Check if announcements were viewed
+          let announcementViewed = localStorage.getItem('announcementViewed');
+      
+          // If not viewed, show red bell icon
+          if (!announcementViewed) {
+            document.getElementById('bell-icon').style.display = 'inline-block';
+          } else {
+            // Hide bell icon if already viewed
+            document.getElementById('bell-icon').style.display = 'none';
+          }
+      
+          // Click event to simulate opening the announcement page
+          document.querySelector('.link a[href="#"]').addEventListener('click', function () {
+            localStorage.setItem('announcementViewed', 'true');
+            document.getElementById('bell-icon').style.display = 'none';
+          });
+        });
+      
+        // Hamburger toggle functions for mobile
+        function hamburg() {
+          document.querySelector('.dropdown').style.transform = 'translateY(0)';
+          document.querySelector('.hamburg').style.display = 'none';
+          document.querySelector('.cancel').style.display = 'block';
+        }
+      
+        function cancel() {
+          document.querySelector('.dropdown').style.transform = 'translateY(-500px)';
+          document.querySelector('.cancel').style.display = 'none';
+          document.querySelector('.hamburg').style.display = 'block';
+        }
+      </script>
+      
+      
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+      AOS.init({offset:0});
+      </script>
+      
+      <script >
+      function hamburg(){
+      const navbar = document.querySelector(".dropdown")
+      navbar.style.transform = "translateY(0px)"
+      }
+      
+      function cancel(){
+      const navbar = document.querySelector(".dropdown")
+      navbar.style.transform = "translateY(-500px)"
+      }
+      </script>
+    
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const carousel = document.querySelector('.carousel');
+      const leftButton = document.getElementById('left');
+      const rightButton = document.getElementById('right');
+    
+      leftButton.addEventListener('click', () => {
+          carousel.scrollBy({
+              left: -carousel.clientWidth,
+              behavior: 'smooth'
+          });
+      });
+    
+      rightButton.addEventListener('click', () => {
+          carousel.scrollBy({
+              left: carousel.clientWidth,
+              behavior: 'smooth'
+          });
+      });
+    
+      let isDragging = false;
+      let startX;
+      let scrollLeft;
+    
+      carousel.addEventListener('mousedown', (e) => {
+          isDragging = true;
+          startX = e.pageX - carousel.offsetLeft;
+          scrollLeft = carousel.scrollLeft;
+      });
+    
+      carousel.addEventListener('mouseleave', () => {
+          isDragging = false;
+      });
+    
+      carousel.addEventListener('mouseup', () => {
+          isDragging = false;
+      });
+    
+      carousel.addEventListener('mousemove', (e) => {
+          if (!isDragging) return;
+          e.preventDefault();
+          const x = e.pageX - carousel.offsetLeft;
+          const walk = (x - startX) * 2; //scroll-fast
+          carousel.scrollLeft = scrollLeft - walk;
+      });
+    });
+    </script>
+    <script>
+      window.onscroll = function () {
+    var header = document.querySelector("header");
+
+    if (window.scrollY > 50) {
+        header.style.backgroundColor = "white";
+        header.style.animation = "blink 0.5s"; // Optional blink effect
+    } else {
+        header.style.backgroundColor = "transparent";
+    }
+};
+
+// Optional blink effect CSS
+let styleSheet = document.createElement("style");
+styleSheet.innerHTML = `
+  @keyframes blink {
+    0% { background-color: transparent; }
+    50% { background-color: white; }
+    100% { background-color: white; }
+  }
+`;
+document.head.appendChild(styleSheet);
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+  </body>
+</html>

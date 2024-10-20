@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GizmodesigHub</title>
+  <link rel="icon" href="GIZMO DP.png" type="image/x-icon">
+  <link rel="icon" type="image/png" sizes="20x20" href="/images/NOOR-SHOW-LOGO-PNG.png">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <link rel="stylesheet" href="styles.css">
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+    *{
+      padding: 0;
+      margin: 0;
+      font-family: 'Red Hat Display', serif;
+      box-sizing: border-box;
+    }
+    body{
+      background-color:rgb(120 118 118 / 4%);
+    }
+
+    header{
+      width: 100%;
+      height: 14vh;
+      overflow: hidden;
+      
+    }
+    header {
+   
+    transition: background-color 0.3s ease;
+}
+
+
+    nav{
+      width: 100%;
+      height: 14vh;
+      position: sticky;
+      background:transparent;
+      z-index: 1000;
+    }
+
+    .nav-container{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .logo{
+      color: black;
+      font-size: 1rem;
+      font-weight: bold;
+      margin-left: 10px;
+    }
+
+    .logo span{
+      color: #30a8e5;
+      text-shadow: 0 0 10px #30a8e5;
+    }
+
+    .bell-icon {
+      font-size: 1.5rem;
+      color: red;
+      display: inline-block;
+      position: relative;
+    }
+
+    .bell-icon i {
+      font-size: 1.8rem;
+      color: red;
+    }
+
+    .hamburg,
+    .cancel{
+      cursor: pointer;
+      position: absolute;
+      right: 15px;
+      top: 10px;
+      color: black;
+      display: none;
+      font-size: 1rem;
+    }
+
+    .nav-container .links{
+      display: flex;
+    }
+
+    .nav-container .links a{
+      position: relative;
+      font-size: 15px;
+      color: black;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: 400;
+      transition: 0.3s linear;
+    }
+
+    .nav-container .links a::before{
+      position: absolute;
+      content: "";
+      bottom: -3px;
+      left: 0;
+      width: 0%;
+      height: 3px;
+      background-color: black;
+      transition: 0.2s linear;
+    }
+
+    .nav-container .links a:hover::before{
+      width: 100%;
+    }
+
+    .nav-container .links a:hover{
+      color: black;
+    }
+
+    .dropdown{
+      z-index: 100;
+      position: fixed;
+      top: 0;
+      left: 0;
+      transform: translateY(-500px);
+      width: 100%;
+      height: auto;
+      backdrop-filter: blur(4px) brightness(40%);
+      box-shadow: 0 0 20px black;
+      transition: 0.2s linear;
+      background: white;
+    }
+
+    .dropdown .links a{
+      display: flex;
+      color: black;
+      text-decoration: none;
+      justify-content: center;
+      padding: 15px 0;
+      align-items: center;
+      transition: 0.2s linear;
+    }
+
+    .dropdown .links a:hover{
+      background-color: black;
+      color: white;
+    }
+
+    /* Media Queries for smaller devices */
+    @media (max-width: 884px) {
+      nav .logo{
+        position: absolute;
+        top: 16px;
+        left: 15px;
+        font-size: 1.5rem;
+      }
+
+      .nav-container .links{
+        display: none;
+      }
+
+      .hamburg,
+      .cancel{
+        display: block;
+        margin-top: 26px;
+      }
+    }
+    .navbutton{
+       width: 230px;
+       height: 40px;
+       border-radius: 7px;
+       background: black;
+       border-color: none;
+       color: white;
+       transition: 0.3sec ease-in;
+       font-family: 'Montserrat', sans-serif;
+      
+    }
+    .navbutton:hover{
+      border-radius: 20px;
+    }
+    .navbtn{
+        margin-left: 20px;
+    }
+    .headline {
+    font-size: 6.5vw;
+    line-height: 1.2em;
+    font-family: 'Red Hat Display',sans-serif;
+    background: -webkit-linear-gradient(left,#dd3b8c ,#f9bf52 ,#1cb4a7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 300;
+}
+  </style>
+
+<style>
+    .frstsection {
+    padding-top: 14vh; /* Adds space to push the h1 down */
+    padding-top: 27vh; /* Pushes the headline further down */
+    text-align: center; /* Centers the headline text */
+  background: url(bggrad.png);
+  height:450px;
+}
+.headline {
+    font-size: 6vw;
+    line-height: 1.2em;
+    font-family: 'Red Hat Display', sans-serif;
+    background: -webkit-linear-gradient(left, #dd3b8c, #f9bf52, #1cb4a7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 300;
+    margin-top: 20px;
+}
+.buttonmain{
+  background: transparent;
+  color: black;
+}
+.buttonmain:hover{
+  background: #f59cc979;
+  color: black;
+}
+.brnd{
+  width: 100px;
+  height: auto;
+ 
+}
+.headlinetwo{
+  font-size: 10vh;
+    line-height: 1.2em;
+    font-family: 'Red Hat Display', sans-serif;
+    background: -webkit-linear-gradient(left, #dd3b8c, #f9bf52, #1cb4a7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 300;
+    margin-top: 20px;
+}
+.ico{
+  font-size: 50px;
+}
+
+
+  </style>
+  <style>
+    .countersec {
+    background-color: #f4f4f4;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.counter-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    padding: 50px 0;
+}
+
+.counter-box {
+    color: #1E2A4F;
+    text-align: center;
+}
+
+.counter-box h2 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #1E2A4F;
+}
+
+.counter-box p {
+    font-size: 1em;
+    color: #1E2A4F;
+}
+
+    </style>
+
+
+<style>
+  .carousel-inner img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+  }
+
+  .text-section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+  }
+
+  .text-section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+  }
+
+  .text-section p {
+      font-size: 1.2rem;
+      color: #555;
+  }
+</style>
+
+<style>
+  .fab{
+  font-size: 22px;
+  color: white;
+  transition: 2sec ease;
+  cursor: pointer;
+}
+.fab:hover{
+  transform: translateY(-10px);
+}
+</style>
+
+
+<style>
+ .lastbutton {
+font-family: Arial, sans-serif;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 30vh;
+
+}
+
+.next-page-arrow {
+text-decoration: none;
+font-size: 24px;
+color: black;
+border: 2px solid #433976 ;
+padding: 10px 20px;
+border-radius: 20px;
+transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.next-page-arrow:hover {
+background-color: #433976 ;
+color: #fff;
+}
+
+</style>
+
+
+
+
+
+<header class="header"  style="position: fixed; z-index: 4; " >
+  <nav>
+    <div class="nav-container">
+      <div class="logo-image" data-aos="zoom-in" data-aos-duration="1500">
+        <img src="GIZMO TYPO.png" alt="logo" style="width:auto; height: 130px; margin-top: 10px;">
+      </div>
+      <div class="links" style="margin-top: 0px;">
+        <div class="link" data-aos="flip-up" data-aos-duration="1500" data-aos-delay="100"><a href="index.html">Home</a></div>
+        <div class="link" data-aos="flip-up" data-aos-duration="1500" data-aos-delay="200"><a href="portfolio.html">Portfolio</a></div>
+        <div class="link" data-aos="flip-up" data-aos-duration="1500" data-aos-delay="300"><a href="about.html">About</a></div>
+        <div class="link" data-aos="flip-up" data-aos-duration="1500" data-aos-delay="400"><a href="contact.html">Contacts</a></div>
+      
+     
+           
+          </div>
+          <div class="links">
+            <button class="navbutton" data-aos="flip-up" data-aos-duration="1500" data-aos-delay="500">
+              <a href="
+              https://wa.me/c/919845879017" style="text-decoration: none; color: white;">Hi Gizmo!</a>
+            </button>
+          </div>
+
+      </div>
+      <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+    </div>
+    <div class="dropdown">
+      <div class="links">
+        <a href="index.html">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contacts</a>
+       
+        <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+      </div>
+    </div>
+  </nav>
+</header>
+
+  <section class="frstsection">
+    <div class="container">
+      <div class="col-md-12 text-center">
+        <h1  data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="100" class="headlinetwo" style="font-weight: 400;">
+         Our Portfolio</h1>
+      
+    
+    <div class="text-center" style="margin-top: 20px;">
+      <p  data-aos="fade-right" data-aos-duration="1500" data-aos-delay="100" style="font-size: 15px;font-family: 'Red Hat Display',sans-serif;color: rgba(0, 0, 0, 0.505);">
+        Unleash Your Vision, Elevate Your Brand with Gizmodesign.hub.</p>
+    </div>
+   
+    </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+     
+        <div class="col-md-12 " >
+          <h1 style="margin-top: 100px;font-size: 45px;"   data-aos="fade-down" data-aos-duration="1500" data-aos-delay="100" class="headlinetwo" style="font-weight: 400;font-size: 45px;">
+           Explore!</h1>
+           </div>
+           
+    
+      
+      <div class="row" style="margin-top: 40px;" >
+
+     
+        <div class="col-md-4 mt-3"  data-aos="fade-up" data-aos-duration="2500" data-aos-delay="100">
+            <div class="image">
+                <img src="four.jpg" alt="" style="width: 100%;object-fit: cover;height: auto;">
+            </div>
+        </div>
+
+        <div class="col-md-4 mt-3"  data-aos="fade-up" data-aos-duration="2500" data-aos-delay="100">
+            <div class="image">
+                <img src="five.jpg" alt="" style="width: 100%;object-fit: cover;height: auto;">
+            </div>
+        </div>
+
+        <div class="col-md-4 mt-3"  data-aos="fade-up" data-aos-duration="2500" data-aos-delay="100">
+            <div class="image">
+                <img src="three.jpg" alt="" style="width: 100%;object-fit: cover;height: auto;">
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="row" style="margin-top: 40px;"  >
+
+     
+      <div class="col-md-4 mt-3"  data-aos="fade-up" data-aos-duration="2500" data-aos-delay="100">
+          <div class="image">
+              <img src="INS 7.jpg" alt="" style="width: 100%;object-fit: cover;height: auto;">
+          </div>
+      </div>
+
+      <div class="col-md-4 mt-3"  data-aos="fade-up" data-aos-duration="2500" data-aos-delay="100">
+          <div class="image">
+              <img src="INS 5.jpg" alt="" style="width: 100%;object-fit: cover;height: auto;">
+          </div>
+      </div>
+
+      <div class="col-md-4 mt-3"  data-aos="fade-up" data-aos-duration="2500" data-aos-delay="100">
+          <div class="image">
+              <img src="INS 6.jpg" alt="" style="width: 100%;object-fit: cover;height: auto;">
+          </div>
+      </div>
+  </div>
+
+
+
+
+
+
+        <div class="row " style="margin-top: 16px;" >
+
+     
+        <div class="col-md-4 mt-3"  data-aos="fade-up" data-aos-duration="2500" data-aos-delay="100">
+            <div class="image">
+                <img src="INS 2.jpg" alt="" style="width: 100%;object-fit: cover;height: auto;">
+            </div>
+        </div>
+
+        <div class="col-md-4 mt-3"  data-aos="fade-up" data-aos-duration="2500" data-aos-delay="100">
+            <div class="image">
+                <img src="INS 3.jpg" alt="" style="width: 100%;object-fit: cover;height: auto;margin-top: 0px;">
+            </div>
+        </div>
+
+        <div class="col-md-4 mt-3"  data-aos="fade-up" data-aos-duration="2500" data-aos-delay="100">
+            <div class="image">
+                <img src="INS 4.jpg" alt="" style="width: 100%;object-fit: cover;height: auto;">
+            </div>
+        </div>
+      </div>
+
+
+      <div class="row " style="margin-top: 16px;">
+
+     
+        <div class="col-md-4 mt-3"  data-aos="fade-up" data-aos-duration="2500" data-aos-delay="100">
+            <div class="image">
+                <img src="28.jpg" alt="" style="width: 100%;object-fit: cover;height: auto;">
+            </div>
+        </div>
+      
+        <div class="col-md-4 mt-3"  data-aos="fade-up" data-aos-duration="2500" data-aos-delay="100">
+            <div class="image">
+                <img src="29.jpg" alt="" style="width: 100%;object-fit: cover;height: auto;">
+            </div>
+        </div>
+      
+        <div class="col-md-4 mt-3"  data-aos="fade-up" data-aos-duration="2500" data-aos-delay="100">
+            <div class="image">
+                <img src="INS 1.jpg" alt="" style="width: 100%;object-fit: cover;height: auto;">
+            </div>
+        </div>
+      </div>
+
+    <div class="row" style="margin-top: 16px;" >
+
+     
+        <div class="col-md-4 mt-3" data-aos="fade-up" data-aos-duration="2500" data-aos-delay="100">
+            <div class="image">
+                <img src="4.jpg" alt="" style="width: 100%;object-fit: cover;height: auto;">
+            </div>
+        </div>
+
+        <div class="col-md-4 mt-3" data-aos="fade-up" data-aos-duration="2500" data-aos-delay="100">
+            <div class="image">
+                <img src="5.jpg" alt="" style="width: 100%;object-fit: cover;height: auto;">
+            </div>
+        </div>
+
+        <div class="col-md-4 mt-3" data-aos="fade-up" data-aos-duration="2500" data-aos-delay="100">
+            <div class="image">
+                <img src="6.jpg" alt="" style="width: 100%;object-fit: cover;height: auto;">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row " style="margin-top: 16px;">
+
+     
+        <div class="col-md-4 mt-3"  data-aos="fade-up" data-aos-duration="2500" data-aos-delay="100">
+            <div class="image">
+                <img src="21.jpg" alt="" style="width: 100%;object-fit: cover;height: auto;">
+            </div>
+        </div>
+
+        <div class="col-md-4 mt-3"  data-aos="fade-up" data-aos-duration="2500" data-aos-delay="100">
+            <div class="image">
+                <img src="19.jpg" alt="" style="width: 100%;object-fit: cover;height: auto;margin-top: 15px;">
+            </div>
+        </div>
+
+        <div class="col-md-4 mt-3"  data-aos="fade-up" data-aos-duration="2500" data-aos-delay="100">
+            <div class="image">
+                <img src="20.jpg" alt="" style="width: 100%;object-fit: cover;height: auto;">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row " style="margin-top: 16px;" >
+
+     
+      <div class="col-md-4 mt-3" data-aos="fade-up" data-aos-duration="2500" data-aos-delay="100">
+          <div class="image">
+              <img src="12.jpg" alt="" style="width: 100%;object-fit: cover;height: auto;">
+          </div>
+      </div>
+
+      <div class="col-md-4 mt-3" data-aos="fade-up" data-aos-duration="2500" data-aos-delay="100">
+          <div class="image">
+              <img src="INS 8.jpg" alt="" style="width: 100%;object-fit: cover;height: auto;">
+          </div>
+      </div>
+
+      <div class="col-md-4 mt-3" data-aos="fade-up" data-aos-duration="2500" data-aos-delay="100">
+          <div class="image">
+              <img src="14.jpg" alt="" style="width: 100%;object-fit: cover;height: auto;">
+          </div>
+      </div>
+  </div>
+
+  <div class="row " style="margin-top: 16px;" >
+
+     
+    <div class="col-md-4 mt-3" data-aos="fade-up" data-aos-duration="2500" data-aos-delay="100">
+        <div class="image">
+            <img src="17.jpg" alt="" style="width: 100%;object-fit: cover;height: auto;">
+        </div>
+    </div>
+
+    <div class="col-md-4 mt-3" data-aos="fade-up" data-aos-duration="2500" data-aos-delay="100">
+        <div class="image">
+            <img src="NLF LOGO MOCKUP.jpg" alt="" style="width: 100%;object-fit: cover;height: auto;">
+        </div>
+    </div>
+
+    <div class="col-md-4 mt-3" data-aos="fade-up" data-aos-duration="2500" data-aos-delay="100">
+        <div class="image">
+            <img src="13.jpg" alt="" style="width: 100%;object-fit: cover;height: auto;">
+        </div>
+    </div>
+</div>
+
+
+
+</div>  
+</section>
+
+
+<section class="lastbutton" style="margin-top: 20px;"  data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
+  <a style="text-decoration: none;" href="about.html" class="next-page-arrow">Next Page &rarr;</a>
+</section>
+
+
+<footer style="background-color: #1E2A4F;margin-top: 50px;">
+  <div class="container-fluid">
+    <div class="row">
+    <div class="col-md-6">
+      <div class="content">
+        <img src="GIZMO TYPO WHITE.png" alt="" style="height: 300px; width: auto;margin-top: -120px;">
+        <p style="color: white; margin-top: -50px;font-size: 13px;margin-left: 59px;">Gizmodesign.hub is a creative hub for talented designers, illustrators, and web developers. It helps professionals explore their creativity and deliver designs that bring value to businesses and the design world.</p>
+       
+      </div>
+    </div>
+    <div class="col-md-6">
+      
+      <div class="anothercontent text-center " style="margin-top: 90px;">
+       <a href="
+       https://www.instagram.com/gizmodesign.hub
+       "> <i class="fab fa-instagram ml-2"></i></a>
+       <a href="https://www.linkedin.com/in/ashiq-gizmo-45ba20323/"><i class="fab fa-linkedin ml-2"></i></a>
+        <a href="
+        https://wa.me/c/919845879017"><i class="fab fa-whatsapp ml-2"></i></a>
+          <a href="
+          https://www.facebook.com/gizmodesign.hub?mibextid=ZbWKwL"><i class="fab fa-facebook ml-2"></i></a>
+            <a href="https://t.me/ashidesign"><i class="fab fa-telegram ml-2"></i></a>
+              <a href="https://www.behance.net/gizmohub"><i class="fab fa-behance ml-2"></i></a>
+                <p style="color: white; font-size: 15px; margin-top: 10px;">A <span style="color: white;font-weight: bold;">GIZMO</span> BRAND</p>
+                  <p style="margin-top: -13px;color: rgba(255, 255, 255, 0.661); font-size: 13px;">© 2024 Gizmo Design Hub. All Rights Reserved.
+                   
+        </p>
+      
+      </div>
+    </div>
+  
+  </div>
+  </div>
+</footer>
+
+
+
+
+
+
+
+<script>
+    window.onscroll = function () {
+    var header = document.querySelector("header");
+    var nav = document.querySelector("nav"); // Select the nav element
+
+    if (window.scrollY > 50) {
+        header.style.backgroundColor = "white";
+        nav.style.backgroundColor = "white"; // Change nav background
+        header.style.animation = "blink 0.5s"; // Optional blink effect
+    } else {
+        header.style.backgroundColor = "transparent";
+        nav.style.backgroundColor = "transparent"; // Reset nav background
+    }
+};
+
+  </script>
+
+      <script>
+        const prev = document.querySelector("#prev");
+      const next = document.querySelector("#next");
+      
+      let carouselVp = document.querySelector("#carousel-vp");
+      
+      let cCarouselInner = document.querySelector("#cCarousel-inner");
+      let carouselInnerWidth = cCarouselInner.getBoundingClientRect().width;
+      
+      let leftValue = 0;
+      
+      // Variable used to set the carousel movement value (card's width + gap)
+      const totalMovementSize =
+      parseFloat(
+        document.querySelector(".cCarousel-item").getBoundingClientRect().width,
+        10
+      ) +
+      parseFloat(
+        window.getComputedStyle(cCarouselInner).getPropertyValue("gap"),
+        10
+      );
+      
+      prev.addEventListener("click", () => {
+      if (!leftValue == 0) {
+        leftValue -= -totalMovementSize;
+        cCarouselInner.style.left = leftValue + "px";
+      }
+      });
+      
+      next.addEventListener("click", () => {
+      const carouselVpWidth = carouselVp.getBoundingClientRect().width;
+      if (carouselInnerWidth - Math.abs(leftValue) > carouselVpWidth) {
+        leftValue -= totalMovementSize;
+        cCarouselInner.style.left = leftValue + "px";
+      }
+      });
+      
+      const mediaQuery510 = window.matchMedia("(max-width: 510px)");
+      const mediaQuery770 = window.matchMedia("(max-width: 770px)");
+      
+      mediaQuery510.addEventListener("change", mediaManagement);
+      mediaQuery770.addEventListener("change", mediaManagement);
+      
+      let oldViewportWidth = window.innerWidth;
+      
+      function mediaManagement() {
+      const newViewportWidth = window.innerWidth;
+      
+      if (leftValue <= -totalMovementSize && oldViewportWidth < newViewportWidth) {
+        leftValue += totalMovementSize;
+        cCarouselInner.style.left = leftValue + "px";
+        oldViewportWidth = newViewportWidth;
+      } else if (
+        leftValue <= -totalMovementSize &&
+        oldViewportWidth > newViewportWidth
+      ) {
+        leftValue -= totalMovementSize;
+        cCarouselInner.style.left = leftValue + "px";
+        oldViewportWidth = newViewportWidth;
+      }
+      }
+      
+      </script>
+    
+    
+    
+    
+    
+      <script>
+        function toggleContent() {
+          var content = document.getElementById("clickContent");
+          if (content.style.display === "none" || content.style.display === "") {
+            content.style.display = "block";
+          } else {
+            content.style.display = "none";
+          }
+        }
+      </script>
+      
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          // Check if announcements were viewed
+          let announcementViewed = localStorage.getItem('announcementViewed');
+      
+          // If not viewed, show red bell icon
+          if (!announcementViewed) {
+            document.getElementById('bell-icon').style.display = 'inline-block';
+          } else {
+            // Hide bell icon if already viewed
+            document.getElementById('bell-icon').style.display = 'none';
+          }
+      
+          // Click event to simulate opening the announcement page
+          document.querySelector('.link a[href="#"]').addEventListener('click', function () {
+            localStorage.setItem('announcementViewed', 'true');
+            document.getElementById('bell-icon').style.display = 'none';
+          });
+        });
+      
+        // Hamburger toggle functions for mobile
+        function hamburg() {
+          document.querySelector('.dropdown').style.transform = 'translateY(0)';
+          document.querySelector('.hamburg').style.display = 'none';
+          document.querySelector('.cancel').style.display = 'block';
+        }
+      
+        function cancel() {
+          document.querySelector('.dropdown').style.transform = 'translateY(-500px)';
+          document.querySelector('.cancel').style.display = 'none';
+          document.querySelector('.hamburg').style.display = 'block';
+        }
+      </script>
+      
+      
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+      AOS.init({offset:0});
+      </script>
+      
+      <script >
+      function hamburg(){
+      const navbar = document.querySelector(".dropdown")
+      navbar.style.transform = "translateY(0px)"
+      }
+      
+      function cancel(){
+      const navbar = document.querySelector(".dropdown")
+      navbar.style.transform = "translateY(-500px)"
+      }
+      </script>
+    
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const carousel = document.querySelector('.carousel');
+      const leftButton = document.getElementById('left');
+      const rightButton = document.getElementById('right');
+    
+      leftButton.addEventListener('click', () => {
+          carousel.scrollBy({
+              left: -carousel.clientWidth,
+              behavior: 'smooth'
+          });
+      });
+    
+      rightButton.addEventListener('click', () => {
+          carousel.scrollBy({
+              left: carousel.clientWidth,
+              behavior: 'smooth'
+          });
+      });
+    
+      let isDragging = false;
+      let startX;
+      let scrollLeft;
+    
+      carousel.addEventListener('mousedown', (e) => {
+          isDragging = true;
+          startX = e.pageX - carousel.offsetLeft;
+          scrollLeft = carousel.scrollLeft;
+      });
+    
+      carousel.addEventListener('mouseleave', () => {
+          isDragging = false;
+      });
+    
+      carousel.addEventListener('mouseup', () => {
+          isDragging = false;
+      });
+    
+      carousel.addEventListener('mousemove', (e) => {
+          if (!isDragging) return;
+          e.preventDefault();
+          const x = e.pageX - carousel.offsetLeft;
+          const walk = (x - startX) * 2; //scroll-fast
+          carousel.scrollLeft = scrollLeft - walk;
+      });
+    });
+    </script>
+    <script>
+      window.onscroll = function () {
+    var header = document.querySelector("header");
+
+    if (window.scrollY > 50) {
+        header.style.backgroundColor = "white";
+        header.style.animation = "blink 0.5s"; // Optional blink effect
+    } else {
+        header.style.backgroundColor = "transparent";
+    }
+};
+
+// Optional blink effect CSS
+let styleSheet = document.createElement("style");
+styleSheet.innerHTML = `
+  @keyframes blink {
+    0% { background-color: transparent; }
+    50% { background-color: white; }
+    100% { background-color: white; }
+  }
+`;
+document.head.appendChild(styleSheet);
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+  </body>
+</html>

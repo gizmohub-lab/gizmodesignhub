@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GizmodesigHub</title>
+    <link rel="icon" href="GIZMO DP.png" type="image/x-icon">
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0; /* Optional: background color */
+        }
+
+        .imgg {
+            animation: bounce 2s infinite;
+            width: 200px;  /* Fixed width */
+            height: 200px; /* Fixed height */
+            padding: 10px;
+            object-fit: cover; /* Ensures the image covers the box */
+        }
+
+        /* Bouncing animation */
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-50px); /* Increased height */
+            }
+            60% {
+                transform: translateY(-50px); /* Increased height */
+            }
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <img class="imgg" src="GIZMO DP.png" alt="Loading...">
+    </section>
+
+    <script>
+        // Redirect to index.html after 5 seconds
+        setTimeout(function() {
+            window.location.href = 'home.html';
+        }, 5000);
+    </script>
+</body>
+</html>
